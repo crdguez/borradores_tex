@@ -32,11 +32,11 @@
 
 \newcommand{\class}{2º Bachillerato CCSS}
 \newcommand{\examdate}{\today}
-\newcommand{\examnum}{Final 2ªEv.}
+\newcommand{\examnum}{Recuperación Análisis}
 \newcommand{\tipo}{A}
 
 
-\newcommand{\timelimit}{105 minutos}
+\newcommand{\timelimit}{55 minutos}
 
 \renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
 
@@ -78,25 +78,63 @@ La nota final de la prueba será la parte proporcional de la puntuación obtenid
 
 \begin{questions}
 
-\question[4] Calcula los siguientes límites:
+\question Calcula los siguientes límites:
 \begin{parts}
 
 %https://academico.unizar.es/sites/academico.unizar.es/files/enviodocumento/acceso/armon/matemaplic/acta20191021.pdf
 
-\part $\lim_{x \to 0}\frac{x+1}{x-1}$
-\begin{solution}$-1$\end{solution}
-\part $\lim_{x \to +\infty}(\sqrt{x}-\sqrt{x-1})$
-\begin{solution}$-1$\end{solution}
-\part $\lim_{x \to 1}\frac{1}{\ln x}$
-\begin{solution}$ \nexists$\end{solution}
-\part $\lim_{x \to 0^+}\ln x$
-\begin{solution}$-\infty$\end{solution}
-% \part $\lim_{x \to +\infty}e^{x+1}$
+% \part $\lim_{x \to 0}\frac{x+1}{x-1}$
+% \begin{solution}$-1$\end{solution}
+% \part $\lim_{x \to +\infty}(\sqrt{x}-\sqrt{x-1})$
+% \begin{solution}$-1$\end{solution}
+% \part $\lim_{x \to 1}\frac{1}{\ln x}$
+% \begin{solution}$ \nexists$\end{solution}
+% \part $\lim_{x \to 0^+}\ln x$
+% \begin{solution}$-\infty$\end{solution}
+\part[1] $\displaystyle\lim_{x \to -\infty}e^{x+1}$
+\begin{solution}$0$\end{solution}
+\part[2] $\displaystyle\lim_{x \to +\infty}\frac{x^2+\sqrt{x+1}}{7x^2-x+4}$
+\begin{solution}$\frac{1}{7}$\end{solution}
+
+\end{parts}
+
+\question[4] Dada la función, definida para $x \in \mathbb{R} $:
+$$f(x)= \begin{cases} 3x+1 &  x < 0 \\ \dfrac{x^2+16}{x+3} & 0\leq x < 5 \\ 
+1+2x-\sqrt{4x^2+21} & x \geq 5 \end{cases}$$
+\begin{parts}
+
+\part (0.75 puntos) ¿Para qué valores de x es la función f continua?
+\begin{solution} \includegraphics[scale=0.4]{./recan1.png} \\
+$ 1 $\end{solution}
+\part (1.5 puntos) Calcular el mínimo valor que toma la función $f$ para $x \in \left[1, 4\right]$
+\begin{solution}$ $\end{solution}
+\part (1 punto) Calcular el $\displaystyle\lim_{x \to \infty}f(x)$ 
+\begin{solution}$ 1 $\end{solution}
+% \part $\displaystyle\lim_{x \to 0^+}\ln x$
+% \begin{solution}$-\infty$\end{solution}
+% \part $\displaystyle\lim_{x \to +\infty}e^{x+1}$
 % \begin{solution}$\infty$\end{solution}
-% \part $\lim_{x \to +\infty}\frac{x^2+\sqrt{x+1}}{7x^2-x+4}$
+% \part $\displaystyle\lim_{x \to +\infty}\frac{x^2+\sqrt{x+1}}{7x^2-x+4}$
 % \begin{solution}$\frac{1}{7}$\end{solution}
 
 \end{parts}
+
+% Reserva 12-13
+\question[1]  Dada la función $f(x) = x^2 + ax + b$, calcular a y b de forma que $f(-1)=3$ y $f$ tenga un mínimo relativo en $x=2$
+
+\begin{solution}
+    $f(-1)=3 \Longleftrightarrow - a + b + 1 = 3$  \\
+    Mínimo relativo en $x=2 \Longleftrightarrow f'(2)=0 \Longleftrightarrow a + 4 = 0$ \\
+    $\begin{cases}
+    - a + b + 1 = 3   \\
+     a + 4 = 0
+    \end{cases} \to a = -4 \land b=-2$
+    
+    
+\end{solution}
+
+
+
 
 % para comentar ctrl+/ o ctrl+shift+7
 
@@ -115,19 +153,19 @@ $\frac{\left(- 2 x + 2\right) e^{x}}{\left(x - 1\right)^{4}} + \frac{e^{x}}{\lef
 
 \question[4] Calcula las siguientes integrales:
 \begin{parts}
-\part $\int \left(x^2+5x+\frac{1}{x} \right) dx$
+\part $\displaystyle\int \left(x^2+5x+\frac{1}{x} \right) dx$
 \begin{solution}
  $\int \left(x^{2} + 5 x + \frac{1}{x}\right)\, dx=\frac{x^{3}}{3} + \frac{5 x^{2}}{2} + \ln{\left (x \right )}+ C $   
 \end{solution}
-\part $\int \dfrac{1}{(x+2)^3} dx$
+\part $\displaystyle\int \dfrac{1}{(x+2)^3} dx$
 \begin{solution}
    $\int \frac{1}{\left(x + 2\right)^{3}}\, dx=- \frac{1}{2 x^{2} + 8 x + 8}+ C $  
 \end{solution}
-\part $\int \dfrac{x+7}{x^2} dx$
+\part $\displaystyle\int \dfrac{x+7}{x^2} dx$
 \begin{solution}
  $\int \frac{1}{x^{2}} \left(x + 7\right)\, dx=\ln{\left (x \right )} - \frac{7}{x}+ C $
 \end{solution}
-\part $\int \dfrac{7x}{\sqrt{x^2+1}} dx$
+\part $\displaystyle\int \dfrac{7x}{\sqrt{x^2+1}} dx$
 \begin{solution}
   $\int \frac{7 x}{\sqrt{x^{2} + 1}}\, dx=7 \sqrt{x^{2} + 1}+ C $ 
 \end{solution}
@@ -207,7 +245,7 @@ Por tanto: $\left [ - \sqrt{2} + 3, \quad min \ rel \ y \ abs \right ], \quad \l
 Probar que la recta $y =-x$ es tangente a la curva $y = f(x)$  en algún punto
 \begin{solution}
     $f'(x)=3 x^{2} - 12 x + 8 \land y=-x \to m=-1$\\
-    $3 x^{2} - 12 x + 8=-1 \to x=1, \ x=3 \to (1,3) \land (3,-3) \to (3,-3)$
+    $3 x^{2} - 12 x + 8=-1 \to x=1, \ x=3 \to (1,3) \land (3,3)$
 
 \end{solution}
 
